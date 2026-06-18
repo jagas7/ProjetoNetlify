@@ -1,0 +1,123 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-block: var(--py-2xl);
+}
+
+.pricing .section-header p {
+  color: var(--primary-color);
+  font-weight: var(--fw-black);
+}
+
+.pricing-grid {
+  align-items: center;
+}
+
+.pricing-card {
+  position: relative;
+  min-height: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-self: center;
+  padding: 2.6rem 1.7rem;
+  border-radius: 1.5rem;
+  background: var(--light-gray);
+  box-shadow: 0 16px 32px rgba(38, 50, 75, 0.12);
+}
+
+.pricing-card .btn {
+  width: 100%;
+}
+
+.pricing-card hr {
+  height: 1.5px;
+  border: none;
+  background: var(--primary-color);
+  margin-block: 0.25rem;
+}
+
+.pricing-card ul {
+  display: grid;
+  gap: 1rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan p,
+.features p,
+.price p {
+  font-size: var(--fs-sm);
+}
+
+.price {
+  display: flex;
+  align-items: end;
+}
+
+.price h2 {
+  font-size: 2.2rem;
+}
+
+.price p {
+  margin-left: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.features {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.features > span {
+  color: var(--primary-color);
+  font-weight: var(--fw-black);
+}
+
+.premium {
+  border: 0.2rem solid var(--primary-color);
+  padding-top: 3.8rem;
+}
+
+.premium .plan > h3 {
+  color: var(--primary-color);
+}
+
+.bonus {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  background: var(--primary-color);
+}
+
+.bonus p {
+  color: var(--light-text-color);
+  font-size: 0.75rem;
+  font-weight: var(--fw-md);
+  text-transform: uppercase;
+}
+
+@media (width > 1280px) {
+  .pricing {
+    gap: 5rem;
+    padding-block: 5rem;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.25rem;
+  }
+}

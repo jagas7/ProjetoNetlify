@@ -1,0 +1,15 @@
+.Toastify__toast {
+  border-radius: 1rem;
+  font-family: var(--ff-sans);
+  box-shadow: var(--shadow);
+}
+
+.Toastify__toast-body {
+  color: var(--text-color);
+  font-weight: var(--fw-bold);
+}
+
+.Toastify__progress-bar--success,
+.Toastify__progress-bar--error {
+  background: var(--primary-color);
+}

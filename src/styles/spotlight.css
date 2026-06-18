@@ -1,0 +1,198 @@
+.spotlight {
+  background: var(--bg-color);
+}
+
+.spotlight-row {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+  padding-block: var(--py-xl);
+}
+
+.spotlight-copy {
+  display: grid;
+  gap: 1.3rem;
+}
+
+.red-line {
+  width: 4.5rem;
+  height: 0.3rem;
+  border-radius: 999px;
+  background: var(--accent-color);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-weight: var(--fw-black);
+}
+
+.spotlight-mini-cards {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.mini-card {
+  min-height: 17rem;
+  padding: 2rem;
+  border-radius: 0.35rem;
+  background: var(--bg-color);
+  box-shadow: var(--shadow);
+}
+
+.mini-card-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  border-radius: 0.55rem;
+  background: var(--accent-color);
+  color: var(--light-text-color);
+}
+
+.mini-card-icon svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: currentColor;
+}
+
+.mini-card-line {
+  display: block;
+  width: 2.8rem;
+  height: 0.18rem;
+  margin-block: 0.9rem;
+  background: var(--accent-color);
+}
+
+.mini-card p {
+  font-size: var(--fs-sm);
+}
+
+.dashboard-art {
+  position: relative;
+  min-height: 24rem;
+}
+
+.dash-bg {
+  position: absolute;
+  display: block;
+  border-radius: 1.25rem;
+}
+
+.dash-bg-one {
+  left: 0;
+  top: 3rem;
+  width: 68%;
+  height: 15rem;
+  background: #fff0f0;
+}
+
+.dash-bg-two {
+  right: 8%;
+  top: 1.2rem;
+  width: 8rem;
+  height: 5rem;
+  background: var(--secondary-color);
+}
+
+.energy-panel,
+.floating-panel {
+  position: absolute;
+  border: 1px solid var(--card-border);
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px);
+}
+
+.energy-panel {
+  left: 7%;
+  top: 5.8rem;
+  width: min(82%, 24rem);
+  padding: 1.4rem;
+}
+
+.panel-top {
+  display: flex;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.panel-top span {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--card-border);
+}
+
+.bar-chart {
+  height: 8rem;
+  display: flex;
+  align-items: end;
+  gap: 0.35rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, var(--secondary-color), var(--bg-color));
+}
+
+.bar-chart i {
+  flex: 1;
+  min-width: 0.35rem;
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(180deg, var(--primary-color), #7bdcb1);
+}
+
+.panel-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: var(--fs-sm);
+}
+
+.panel-row strong,
+.panel-row span {
+  font-weight: var(--fw-black);
+}
+
+.panel-row span {
+  color: var(--primary-color);
+}
+
+.floating-panel {
+  right: 0;
+  bottom: 1.5rem;
+  display: grid;
+  width: 10rem;
+  padding: 1.2rem;
+}
+
+.floating-panel strong {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: var(--fw-black);
+}
+
+@media (width > 860px) {
+  .spotlight-row,
+  .spotlight-row-dashboard {
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .spotlight-row-dashboard {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .spotlight-mini-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width > 1280px) {
+  .spotlight-row {
+    min-height: 34rem;
+  }
+}

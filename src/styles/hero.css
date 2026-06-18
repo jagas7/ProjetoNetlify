@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-block: 6rem 4rem;
+  background: linear-gradient(180deg, var(--bg-color) 0 58%, var(--secondary-color) 58% 100%);
+}
+
+.hero-ornament {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.hero-ornament-left {
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 7.5rem;
+  border-radius: 0 0 3rem 0;
+  background: rgba(34, 165, 101, 0.2);
+}
+
+.hero-ornament-right {
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: var(--secondary-color);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.hero-content > p:not(.eyebrow) {
+  max-width: 38rem;
+}
+
+.hero-buttons {
+  width: min(100%, 28rem);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-metrics {
+  width: min(100%, 50rem);
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-metrics article {
+  padding: 1.35rem;
+  border: 1px solid var(--card-border);
+  border-radius: 1.1rem;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 12px 30px rgba(38, 50, 75, 0.08);
+}
+
+.hero-metrics strong,
+.hero-metrics span {
+  display: block;
+}
+
+.hero-metrics strong {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: var(--fw-black);
+}
+
+.hero-metrics span {
+  font-size: 0.85rem;
+  font-weight: var(--fw-bold);
+}
+
+@media (width > 760px) {
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  .hero-metrics {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width > 1280px) {
+  .hero {
+    background: linear-gradient(90deg, var(--bg-color) 0 58%, var(--secondary-color) 58% 100%);
+  }
+
+  .hero-content > div:first-of-type {
+    gap: 1rem;
+  }
+}
