@@ -121,9 +121,16 @@ VITE_RECAPTCHA_SITE_KEY
 
 O arquivo `netlify.toml` já está configurado assim:
 
-```toml
 [build]
   command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+
+[dev]
+  command = "npm run dev"
+  targetPort = 5173
   publish = "dist"
   functions = "netlify/functions"
 
@@ -136,7 +143,6 @@ O arquivo `netlify.toml` já está configurado assim:
   from = "/*"
   to = "/index.html"
   status = 200
-```
 
 No painel da Netlify, confira:
 
