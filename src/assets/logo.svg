@@ -1,8 +1,6 @@
-@'
-<svg xmlns="http://www.w3.org/2000/svg" width="172" height="44" viewBox="0 0 172 44" fill="none" role="img" aria-label="EcoPulse">
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="44" viewBox="0 0 172 44">
   <rect width="44" height="44" rx="14" fill="#22A565"/>
   <path d="M23.2 33.3C15.9 29.9 11 24.1 11 17.6C11 13.7 13.7 11 17.6 11C20.5 11 22.8 12.4 24 14.9C25.4 11.9 28.6 9.8 33 9.8C35.2 9.8 37 10.4 37 10.4C36.7 21.7 31.5 29.9 23.2 33.3Z" fill="white"/>
   <path d="M23.6 30.2C23 22 25.3 17.4 31.8 12.5" stroke="#DDF7E9" stroke-width="2.7" stroke-linecap="round"/>
-  <text x="58" y="28.5" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800" fill="#26324B">EcoPulse</text>
+  <text x="58" y="29" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800" fill="#26324B">EcoPulse</text>
 </svg>
-'@ | Set-Content -Path "src/assets/logo.svg" -Encoding UTF8
